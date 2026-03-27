@@ -3,73 +3,38 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     [Header("Daftar Halaman UI")]
-    public GameObject panelMainMenu;
-    public GameObject panelStartAR;
-    public GameObject panelExplore1;
-    public GameObject panelExplore2;
-    public GameObject panelHowToUse;
-    public GameObject panelQuizMenu; // Entry point kuis
-    public GameObject panelAbout;
+    public GameObject Panel_MainMenu;
+    public GameObject Panel_StartAR;
+    public GameObject Panel_Explore1;
+    public GameObject Panel_Explore2;
+    public GameObject Panel_HowToUse;
+    public GameObject Panel_QuizMenu;
+    public GameObject Panel_About;
 
     void Start()
     {
-        // Saat game baru dimulai, pastikan hanya Main Menu yang muncul
+        // Munculkan Menu Utama saat start
         ShowMainMenu();
     }
 
-    // Fungsi internal untuk menyembunyikan semua halaman
+    // Fungsi sakti untuk mematikan semua halaman
     private void HideAllPanels()
     {
-        panelMainMenu.SetActive(false);
-        panelStartAR.SetActive(false);
-        panelExplore1.SetActive(false);
-        panelExplore2.SetActive(false);
-        panelHowToUse.SetActive(false);
-        panelQuizMenu.SetActive(false);
-        panelAbout.SetActive(false);
+        Panel_MainMenu.SetActive(false);
+        Panel_StartAR.SetActive(false);
+        Panel_Explore1.SetActive(false);
+        Panel_Explore2.SetActive(false);
+        Panel_HowToUse.SetActive(false);
+        Panel_QuizMenu.SetActive(false);
+        Panel_About.SetActive(false);
     }
 
-    // --- FUNGSI NAVIGASI TOMBOL ---
-
-    public void ShowMainMenu()
-    {
-        HideAllPanels();
-        panelMainMenu.SetActive(true);
-    }
-
-    public void ShowStartAR()
-    {
-        HideAllPanels();
-        panelStartAR.SetActive(true);
-    }
-
-    public void ShowExplore1()
-    {
-        HideAllPanels();
-        panelExplore1.SetActive(true);
-    }
-
-    public void ShowExplore2()
-    {
-        HideAllPanels();
-        panelExplore2.SetActive(true);
-    }
-
-    public void ShowHowToUse()
-    {
-        HideAllPanels();
-        panelHowToUse.SetActive(true);
-    }
-
-    public void ShowQuizMenu()
-    {
-        HideAllPanels();
-        panelQuizMenu.SetActive(true);
-    }
-
-    public void ShowAbout()
-    {
-        HideAllPanels();
-        panelAbout.SetActive(true);
-    }
+    // Fungsi navigasi yang dipanggil tombol
+    public void ShowMainMenu() { HideAllPanels(); Panel_MainMenu.SetActive(true); }
+    public void ShowStartAR() { HideAllPanels(); Panel_StartAR.SetActive(true); }
+    public void ShowExplore1() { HideAllPanels(); Panel_Explore1.SetActive(true); }
+    public void ShowExplore2() { HideAllPanels(); Panel_Explore2.SetActive(true); }
+    public void ShowHowToUse() { HideAllPanels(); Panel_HowToUse.SetActive(true); }
+    public void ShowQuizMenu() { HideAllPanels(); Panel_QuizMenu.SetActive(true); }
+    public void ShowAbout() { HideAllPanels(); Panel_About.SetActive(true); }
 }
