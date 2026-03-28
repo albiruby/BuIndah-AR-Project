@@ -11,30 +11,88 @@ public class UIManager : MonoBehaviour
     public GameObject Panel_QuizMenu;
     public GameObject Panel_About;
 
+    // Array untuk menyimpan urutan halaman
+    private GameObject[] allPanels;
+
+    // Penanda posisi halaman saat ini (0 adalah MainMenu)
+    private int currentIndex = 0;
+
     void Start()
     {
-        // Munculkan Menu Utama saat start
+        // 1. Susun urutan halaman di sini. 
+        // Jika kamu ingin mengubah urutan Next/Back, ubah urutan baris di bawah ini.
+        allPanels = new GameObject[] {
+            Panel_MainMenu,  // Index 0
+            Panel_StartAR,   // Index 1
+            Panel_Explore1,  // Index 2
+            Panel_Explore2,  // Index 3
+            Panel_HowToUse,  // Index 4
+            Panel_QuizMenu,  // Index 5
+            Panel_About      // Index 6
+        };
+
+        // Mulai dari menu utama
         ShowMainMenu();
     }
 
     // Fungsi sakti untuk mematikan semua halaman
     private void HideAllPanels()
     {
-        Panel_MainMenu.SetActive(false);
-        Panel_StartAR.SetActive(false);
-        Panel_Explore1.SetActive(false);
-        Panel_Explore2.SetActive(false);
-        Panel_HowToUse.SetActive(false);
-        Panel_QuizMenu.SetActive(false);
-        Panel_About.SetActive(false);
+        foreach (GameObject panel in allPanels)
+        {
+            panel.SetActive(false);
+        }
     }
 
-    // Fungsi navigasi yang dipanggil tombol
-    public void ShowMainMenu() { HideAllPanels(); Panel_MainMenu.SetActive(true); }
-    public void ShowStartAR() { HideAllPanels(); Panel_StartAR.SetActive(true); }
-    public void ShowExplore1() { HideAllPanels(); Panel_Explore1.SetActive(true); }
-    public void ShowExplore2() { HideAllPanels(); Panel_Explore2.SetActive(true); }
-    public void ShowHowToUse() { HideAllPanels(); Panel_HowToUse.SetActive(true); }
-    public void ShowQuizMenu() { HideAllPanels(); Panel_QuizMenu.SetActive(true); }
-    public void ShowAbout() { HideAllPanels(); Panel_About.SetActive(true); }
+    // Fungsi inti untuk memunculkan halaman berdasarkan index saat ini
+    private void UpdateUI()
+    {
+        HideAllPanels();
+        allPanels[currentIndex].SetActive(true);
+    }
+
+    // ==========================================
+    // FUNGSI BARU: NEXT, BACK, HOME (LOOPING)
+    // ==========================================
+
+    public void NextPage()
+    {
+        currentIndex++; // Tambah 1 ke index
+
+        // Looping: Jika index melebihi batas jumlah halaman, kembalikan ke 0
+        if (currentIndex >= allPanels.Length)
+        {
+            currentIndex = 0;
+        }
+        UpdateUI();
+    }
+
+    public void PreviousPage()
+    {
+        currentIndex--; // Kurangi 1 dari index
+
+        // Looping: Jika index kurang dari 0, lempar ke halaman paling terakhir
+        if (currentIndex < 0)
+        {
+            currentIndex = allPanels.Length - 1;
+        }
+        UpdateUI();
+    }
+
+    public void Home()
+    {
+        ShowMainMenu();
+    }
+
+    // ==========================================
+    // FUNGSI LAMA (Tetap dipertahankan agar tombol menu tidak rusak)
+    // ==========================================
+
+    public void ShowMainMenu() { currentIndex = 0; UpdateUI(); }
+    public void ShowStartAR() { currentIndex = 1; UpdateUI(); }
+    public void ShowExplore1() { currentIndex = 2; UpdateUI(); }
+    public void ShowExplore2() { currentIndex = 3; UpdateUI(); }
+    public void ShowHowToUse() { currentIndex = 4; UpdateUI(); }
+    public void ShowQuizMenu() { currentIndex = 5; UpdateUI(); }
+    public void ShowAbout() { currentIndex = 6; UpdateUI(); }
 }
