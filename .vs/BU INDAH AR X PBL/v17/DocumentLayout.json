@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\Kuliah\\BU INDAH AR X PBL\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\QuizManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\QuizManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\AudioManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\AudioManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\AudioButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\AudioButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\UIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UIManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Kuliah\\BU INDAH AR X PBL\\Library\\PackageCache\\com.unity.render-pipelines.universal@a6e30d1f59f5\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@a6e30d1f59f5\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +38,64 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lit.shader",
+              "DocumentMoniker": "D:\\Kuliah\\BU INDAH AR X PBL\\Library\\PackageCache\\com.unity.render-pipelines.universal@a6e30d1f59f5\\Shaders\\Lit.shader",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@a6e30d1f59f5\\Shaders\\Lit.shader",
+              "ToolTip": "D:\\Kuliah\\BU INDAH AR X PBL\\Library\\PackageCache\\com.unity.render-pipelines.universal@a6e30d1f59f5\\Shaders\\Lit.shader",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@a6e30d1f59f5\\Shaders\\Lit.shader",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-31T03:30:21.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AudioButton.cs",
+              "DocumentMoniker": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\AudioButton.cs",
+              "RelativeDocumentMoniker": "Assets\\AudioButton.cs",
+              "ToolTip": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\AudioButton.cs",
+              "RelativeToolTip": "Assets\\AudioButton.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAswB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T11:15:18.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\AudioManager.cs",
+              "ToolTip": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\AudioManager.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswBsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T11:13:30.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "QuizManager.cs",
+              "DocumentMoniker": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\QuizManager.cs",
+              "RelativeDocumentMoniker": "Assets\\QuizManager.cs",
+              "ToolTip": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\QuizManager.cs",
+              "RelativeToolTip": "Assets\\QuizManager.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAGkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T10:55:51.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UIManager.cs",
               "DocumentMoniker": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\UIManager.cs",
               "ToolTip": "D:\\Kuliah\\BU INDAH AR X PBL\\Assets\\UIManager.cs",
               "RelativeToolTip": "Assets\\UIManager.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAswB0AAAAFAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAswE8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T07:13:56.708Z",
               "EditorCaption": ""
